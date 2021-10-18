@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 38.0, 82.0, 646.0, 780.0 ],
+		"rect" : [ 38.0, 82.0, 1364.0, 780.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,18 +46,6 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 782.75, 193.0, 58.0, 22.0 ],
 					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 797.0, 222.284172661870343, 29.5, 22.0 ],
-					"text" : "1"
 				}
 
 			}
@@ -120,8 +108,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 688.0, 250.0, 64.0, 22.0 ],
-					"text" : "snapshot~"
+					"patching_rect" : [ 688.0, 250.0, 74.0, 22.0 ],
+					"text" : "snapshot~ 5"
 				}
 
 			}
@@ -134,7 +122,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 762.0, 250.0, 50.0, 22.0 ]
+					"patching_rect" : [ 768.0, 250.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -4458,7 +4446,7 @@
 									"patching_rect" : [ 3.0, 111.000015000000005, 59.5, 22.0 ],
 									"restore" : 									{
 										"FreqRate" : [ 0.320611793805892 ],
-										"Mute" : [ 0.0 ],
+										"Mute" : [ 1.0 ],
 										"Phase-Inversion" : [ 0.0 ],
 										"SpectraLFOPhase[1]" : [ -0.488188976377953 ],
 										"SpectraShape" : [ 0.0 ],
@@ -4468,7 +4456,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u047004979"
+									"varname" : "u080000881"
 								}
 
 							}
@@ -4927,7 +4915,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 756.0, 82.0, 646.0, 780.0 ],
+						"rect" : [ 38.0, 82.0, 646.0, 343.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5225,388 +5213,170 @@
 					"clipheight" : 20.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Child Choir 01 120 BPM C.wav",
-								"filename" : "RMR Morphagene Reels 122220 Child Choir 01 120 BPM C.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/amen brake 140.wav",
+								"filename" : "amen brake 140.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Kinetic Metal 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Kinetic Metal 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.395480225988701, 0.305084745762712 ],
 								"loop" : 1,
 								"content_state" : 								{
+									"slurtime" : [ 0.0 ],
+									"speed" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Mallet Flux 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Mallet Flux 01 80 BPM.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/okay-i-quit-no-sfx.wav",
+								"filename" : "okay-i-quit-no-sfx.wav",
 								"filekind" : "audiofile",
-								"selection" : [ 0.0, 0.067901234567901 ],
 								"loop" : 1,
 								"content_state" : 								{
+									"slurtime" : [ 0.0 ],
+									"speed" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Toys 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Toys 01 80 BPM.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Child Choir 01 120 BPM C.wav",
+								"filename" : "RMR Child Choir 01 120 BPM C.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"slurtime" : [ 0.0 ],
+									"speed" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Child Choir 01 120 BPM C.wav",
-								"filename" : "RMR Morphagene Reels 122220 Child Choir 01 120 BPM C.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Fine Day.wav",
+								"filename" : "RMR Fine Day.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"slurtime" : [ 0.0 ],
+									"speed" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Kinetic Metal 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Kinetic Metal 01 80 BPM.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Kinetic Metal 01 80 BPM.wav",
+								"filename" : "RMR Kinetic Metal 01 80 BPM.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"slurtime" : [ 0.0 ],
+									"speed" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Mallet Flux 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Mallet Flux 01 80 BPM.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Mallet Flux 01 80 BPM.wav",
+								"filename" : "RMR Mallet Flux 01 80 BPM.wav",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
+									"slurtime" : [ 0.0 ],
+									"speed" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Toys 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Toys 01 80 BPM.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Percussion 80 BPM.wav",
+								"filename" : "RMR Percussion 80 BPM.wav",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
+									"slurtime" : [ 0.0 ],
+									"speed" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
 									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Child Choir 01 120 BPM C.wav",
-								"filename" : "RMR Morphagene Reels 122220 Child Choir 01 120 BPM C.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"mode" : [ "basic" ],
 									"formant" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
 									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Kinetic Metal 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Kinetic Metal 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Mallet Flux 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Mallet Flux 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Toys 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Toys 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Child Choir 01 120 BPM C.wav",
-								"filename" : "RMR Morphagene Reels 122220 Child Choir 01 120 BPM C.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Kinetic Metal 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Kinetic Metal 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Mallet Flux 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Mallet Flux 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Morphagene Reels 122220 Toys 01 80 BPM.wav",
-								"filename" : "RMR Morphagene Reels 122220 Toys 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"originallengthms" : [ 0.0 ]
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -5690,8 +5460,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 9,
 					"outlettype" : [ "int", "int", "float", "float", "float", "", "int", "float", "" ],
-					"patching_rect" : [ 397.0, 597.0, 176.0, 22.0 ],
-					"text" : "transport @tempo 130"
+					"patching_rect" : [ 397.0, 597.0, 128.0, 22.0 ],
+					"text" : "transport @tempo 100"
 				}
 
 			}
@@ -5767,7 +5537,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 133.0, 106.0, 640.0, 480.0 ],
+						"rect" : [ 38.0, 82.0, 646.0, 343.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5934,7 +5704,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 505.0, 678.999996185302734, 69.0, 22.0 ],
+					"patching_rect" : [ 505.0, 678.999996185302734, 35.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5942,7 +5712,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p @title trig"
+					"text" : "p trig"
 				}
 
 			}
@@ -6056,7 +5826,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 756.0, 82.0, 646.0, 780.0 ],
+						"rect" : [ 38.0, 82.0, 1364.0, 780.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6085,49 +5855,282 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-133",
+									"id" : "obj-151",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 806.473054647445679, 823.5, 29.5, 22.0 ],
-									"text" : "*"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-130",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 462.0, 780.0, 29.5, 22.0 ],
+									"patching_rect" : [ 985.714412033557892, 930.404835194349289, 29.5, 22.0 ],
 									"text" : "/"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-127",
+									"id" : "obj-149",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 462.0, 751.0, 70.0, 22.0 ],
-									"text" : "sampstoms"
+									"patching_rect" : [ 1067.61918443441391, 904.762020707130432, 68.0, 22.0 ],
+									"text" : "samplerate"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-125",
+									"id" : "obj-147",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 985.714412033557892, 864.762015581130981, 57.0, 22.0 ],
+									"text" : "r CLOCK"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-145",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 462.0, 811.0, 45.0, 22.0 ],
-									"text" : "phasor"
+									"patching_rect" : [ 644.0, 774.0, 110.0, 22.0 ],
+									"text" : "scale 0 1 1 384000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-141",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 638.0, 731.0, 59.0, 22.0 ],
+									"text" : "r REGEN"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-140",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 843.0, 788.571429669857025, 263.0, 22.0 ],
+									"text" : "sample stutter @boundmode clip @index spline"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-138",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 874.333333333333371, 652.148142337799072, 19.0, 22.0 ],
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 874.333333333333371, 683.0, 49.0, 22.0 ],
+									"text" : "counter"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-137",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 874.333333333333371, 620.0, 151.0, 22.0 ],
+									"text" : "data stutter 384000 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-136",
+									"maxclass" : "newobj",
+									"numinlets" : 4,
+									"numoutlets" : 0,
+									"patching_rect" : [ 843.0, 722.0, 171.0, 22.0 ],
+									"text" : "poke stutter @boundmode clip"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-128",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 985.714412033557892, 956.047649681568146, 35.0, 22.0 ],
+									"text" : "s NR"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-112",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1158.042872154712768, 768.09956294298172, 60.0, 22.0 ],
+									"text" : "s SCOPE"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-109",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1187.633347856998398, 605.983052405212675, 19.0, 22.0 ],
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-107",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1170.933347856998353, 605.983052405212675, 19.0, 22.0 ],
+									"text" : "0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-106",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1154.233347856998535, 581.738068997859955, 57.0, 22.0 ],
+									"text" : "dim main"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-104",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 679.5, 483.0, 19.0, 22.0 ],
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-97",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1137.533347856998489, 557.497657239437103, 19.0, 22.0 ],
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-88",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1120.833347856998444, 644.90043705701828, 102.5, 22.0 ],
+									"text" : "scale"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-87",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 843.0, 591.0, 56.0, 20.0 ],
+									"text" : "\"dry out\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-83",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 552.0, 479.597220182418823, 150.0, 20.0 ],
+									"text" : "\"4 seconds of dry\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-79",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1055.083347856998444, 581.738068997859955, 87.0, 20.0 ],
+									"text" : "main \"phasor\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-55",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1131.333347856998444, 668.90043705701828, 19.0, 22.0 ],
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-53",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1120.833347856998444, 731.0, 29.5, 22.0 ],
+									"text" : "rate"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-51",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1121.392872154712677, 768.09956294298172, 36.0, 22.0 ],
+									"text" : "s NM"
 								}
 
 							}
@@ -6325,7 +6328,7 @@
 										"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 									}
 ,
-									"patching_rect" : [ 462.0, 838.0, 74.0, 22.0 ],
+									"patching_rect" : [ 870.40476300319051, 891.357211142778397, 74.0, 22.0 ],
 									"text" : "gen window"
 								}
 
@@ -6372,7 +6375,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 843.0, 823.5, 56.0, 22.0 ],
+									"patching_rect" : [ 843.0, 1042.648129343986511, 56.0, 22.0 ],
 									"text" : "r BLEND"
 								}
 
@@ -6384,7 +6387,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 806.473054647445679, 873.0, 40.0, 22.0 ],
+									"patching_rect" : [ 806.473054647445679, 1092.148129343986511, 40.0, 22.0 ],
 									"text" : "mix"
 								}
 
@@ -6415,23 +6418,12 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-113",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 114.412462711334229, 1339.0, 53.0, 22.0 ],
-									"text" : "send NL"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-111",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 476.0, 1586.349329919815091, 55.0, 22.0 ],
-									"text" : "send NR"
+									"patching_rect" : [ 476.0, 1586.349329919815091, 53.0, 22.0 ],
+									"text" : "send NL"
 								}
 
 							}
@@ -6608,7 +6600,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 44.111110925674438, 136.037042260169983, 33.0, 22.0 ],
+									"patching_rect" : [ 45.111110925674438, 128.037042260169983, 33.0, 22.0 ],
 									"text" : "r NR"
 								}
 
@@ -7699,6 +7691,34 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-121", 0 ],
+									"source" : [ "obj-104", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-88", 2 ],
+									"source" : [ "obj-106", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-88", 3 ],
+									"source" : [ "obj-107", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-88", 4 ],
+									"source" : [ "obj-109", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-114", 0 ],
 									"source" : [ "obj-110", 0 ]
 								}
@@ -7722,7 +7742,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-133", 0 ],
+									"destination" : [ "obj-136", 0 ],
+									"order" : 0,
+									"source" : [ "obj-116", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-78", 0 ],
+									"order" : 1,
 									"source" : [ "obj-116", 0 ]
 								}
 
@@ -7745,13 +7774,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-194", 0 ],
-									"source" : [ "obj-125", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
 									"source" : [ "obj-126", 0 ]
 								}
@@ -7759,22 +7781,67 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-130", 0 ],
-									"source" : [ "obj-127", 0 ]
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-125", 0 ],
-									"source" : [ "obj-130", 0 ]
+									"destination" : [ "obj-136", 1 ],
+									"order" : 1,
+									"source" : [ "obj-139", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-78", 0 ],
-									"source" : [ "obj-133", 0 ]
+									"destination" : [ "obj-194", 0 ],
+									"order" : 2,
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-88", 0 ],
+									"order" : 0,
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-78", 1 ],
+									"source" : [ "obj-140", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-145", 0 ],
+									"source" : [ "obj-141", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-139", 2 ],
+									"source" : [ "obj-145", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-151", 0 ],
+									"source" : [ "obj-147", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-151", 1 ],
+									"source" : [ "obj-149", 0 ]
 								}
 
 							}
@@ -7782,6 +7849,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-61", 0 ],
 									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-128", 0 ],
+									"source" : [ "obj-151", 0 ]
 								}
 
 							}
@@ -7979,8 +8053,39 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-112", 0 ],
+									"order" : 0,
+									"source" : [ "obj-53", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-140", 0 ],
+									"order" : 2,
+									"source" : [ "obj-53", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-51", 0 ],
+									"order" : 1,
+									"source" : [ "obj-53", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-62", 0 ],
 									"source" : [ "obj-54", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 1 ],
+									"source" : [ "obj-55", 0 ]
 								}
 
 							}
@@ -8095,6 +8200,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-53", 0 ],
+									"source" : [ "obj-88", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-98", 0 ],
 									"source" : [ "obj-89", 0 ]
 								}
@@ -8147,6 +8259,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-88", 1 ],
+									"source" : [ "obj-97", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-92", 0 ],
 									"source" : [ "obj-98", 0 ]
 								}
@@ -8156,13 +8275,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-110", 0 ],
 									"source" : [ "obj-99", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-113", 0 ],
-									"source" : [ "obj-99", 1 ]
 								}
 
 							}
@@ -10196,23 +10308,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-97", 1 ],
-					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-101", 0 ],
-					"order" : 1,
-					"source" : [ "obj-41", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"order" : 0,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -10417,7 +10513,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
-					"midpoints" : [ 697.5, 273.0, 759.0, 273.0, 759.0, 246.0, 771.5, 246.0 ],
+					"midpoints" : [ 697.5, 273.0, 759.0, 273.0, 759.0, 246.0, 777.5, 246.0 ],
 					"order" : 0,
 					"source" : [ "obj-97", 0 ]
 				}
@@ -10432,35 +10528,35 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-74::obj-89" : [ "FreqRate", "Rate", 0 ],
-			"obj-74::obj-74" : [ "SyncRate", "Rate", 0 ],
-			"obj-74::obj-94" : [ "Re-Trigger", "Re-Trigger", 0 ],
-			"obj-74::obj-75" : [ "Shape", "Shape", 0 ],
+			"obj-7::obj-35" : [ "[5]", "Level", 0 ],
 			"obj-22" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
+			"obj-74::obj-75" : [ "Shape", "Shape", 0 ],
 			"obj-29" : [ "live.tab[4]", "live.tab[3]", 0 ],
+			"obj-74::obj-81" : [ "Phase-Inversion", "Phase-Inversion", 1 ],
+			"obj-74::obj-94" : [ "Re-Trigger", "Re-Trigger", 0 ],
 			"obj-20" : [ "knob7", "knob7", 0 ],
-			"obj-9::obj-32" : [ "live.text[2]", "FILTER", 0 ],
+			"obj-73" : [ "live.button", "live.button", 0 ],
 			"obj-18" : [ "knob6", "knob6", 0 ],
+			"obj-74::obj-89" : [ "FreqRate", "Rate", 0 ],
 			"obj-19" : [ "knob5", "knob5", 0 ],
+			"obj-83" : [ "live.button[3]", "live.button", 0 ],
+			"obj-74::obj-74" : [ "SyncRate", "Rate", 0 ],
+			"obj-26" : [ "live.tab[2]", "live.tab[3]", 0 ],
 			"obj-16" : [ "knob4", "knob4", 0 ],
 			"obj-17" : [ "knob3", "knob3", 0 ],
-			"obj-9::obj-33" : [ "live.text[1]", "FILTER", 0 ],
-			"obj-74::obj-144" : [ "Phase", "Phase", 0 ],
-			"obj-12" : [ "knob2", "knob2", 0 ],
-			"obj-7::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
-			"obj-7::obj-35" : [ "[5]", "Level", 0 ],
-			"obj-10" : [ "knob1", "knob1", 0 ],
-			"obj-74::obj-12" : [ "Mute", "Mute", 0 ],
-			"obj-73" : [ "live.button", "live.button", 0 ],
-			"obj-74::obj-88" : [ "Time Mode", "Time Mode", 1 ],
 			"obj-30" : [ "live.text", "live.text", 0 ],
-			"obj-83" : [ "live.button[3]", "live.button", 0 ],
-			"obj-26" : [ "live.tab[2]", "live.tab[3]", 0 ],
+			"obj-12" : [ "knob2", "knob2", 0 ],
+			"obj-10" : [ "knob1", "knob1", 0 ],
 			"obj-11" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-74::obj-81" : [ "Phase-Inversion", "Phase-Inversion", 1 ],
 			"obj-85" : [ "live.button[5]", "live.button", 0 ],
 			"obj-9::obj-34" : [ "live.text[3]", "FILTER", 0 ],
 			"obj-86" : [ "live.button[6]", "live.button", 0 ],
+			"obj-7::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-74::obj-88" : [ "Time Mode", "Time Mode", 1 ],
+			"obj-74::obj-12" : [ "Mute", "Mute", 0 ],
+			"obj-74::obj-144" : [ "Phase", "Phase", 0 ],
+			"obj-9::obj-32" : [ "live.text[2]", "FILTER", 0 ],
+			"obj-9::obj-33" : [ "live.text[1]", "FILTER", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -10567,28 +10663,49 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "RMR Morphagene Reels 122220 Child Choir 01 120 BPM C.wav",
+				"name" : "amen brake 140.wav",
 				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
 				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "RMR Morphagene Reels 122220 Kinetic Metal 01 80 BPM.wav",
+				"name" : "okay-i-quit-no-sfx.wav",
 				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
 				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "RMR Morphagene Reels 122220 Mallet Flux 01 80 BPM.wav",
+				"name" : "RMR Child Choir 01 120 BPM C.wav",
 				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
 				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "RMR Morphagene Reels 122220 Toys 01 80 BPM.wav",
+				"name" : "RMR Fine Day.wav",
+				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
+				"patcherrelativepath" : "./samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "RMR Kinetic Metal 01 80 BPM.wav",
+				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
+				"patcherrelativepath" : "./samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "RMR Mallet Flux 01 80 BPM.wav",
+				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
+				"patcherrelativepath" : "./samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "RMR Percussion 80 BPM.wav",
 				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
 				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
@@ -10603,8 +10720,8 @@
 		"styles" : [ 			{
 				"name" : "newobj001",
 				"default" : 				{
-					"fontname" : [ "Arial Bold" ],
-					"fontsize" : [ 10.0 ]
+					"fontsize" : [ 10.0 ],
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
