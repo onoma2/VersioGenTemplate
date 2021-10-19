@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 115.0, 78.0, 661.0, 745.0 ],
+		"rect" : [ 38.0, 82.0, 1364.0, 780.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,34 @@
 		"subpatcher_template" : "oopsy_versio",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"extract" : 1,
 					"id" : "obj-35",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "bp.Global Transport.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 797.0, 467.355421686746922, 157.0, 116.0 ],
+					"varname" : "bp.Global Transport",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-63",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 999.877680778503418, 193.0, 58.0, 22.0 ],
-					"text" : "loadbang"
+					"patching_rect" : [ 231.0, 65.715827338129543, 63.0, 22.0 ],
+					"text" : "closebang"
 				}
 
 			}
@@ -214,7 +235,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 3.0, 67.0, 221.0, 34.0 ],
+									"patching_rect" : [ 3.0, 67.0, 221.0, 33.0 ],
 									"text" : "## More advanced LFO with phase control, sync and status display ## "
 								}
 
@@ -452,11 +473,11 @@
 									"patching_rect" : [ 419.398131999999976, 304.545044000000019, 26.0, 26.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 1,
-											"parameter_shortname" : "Re-Trigger",
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_type" : 2,
-											"parameter_longname" : "Re-Trigger[1]"
+											"parameter_longname" : "Re-Trigger[1]",
+											"parameter_mmax" : 1,
+											"parameter_shortname" : "Re-Trigger"
 										}
 
 									}
@@ -488,15 +509,15 @@
 									"prototypename" : "M4L.dial.tiny",
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 15,
-											"parameter_initial" : [ 5.0 ],
-											"parameter_speedlim" : 0.0,
-											"parameter_shortname" : "Rate",
 											"parameter_enum" : [ "1/48", "1/32", "1/24", "1/16", "1/12", "1/8", "1/6", "1/4", "1/3", "1/2", "1", "2", "3", "4", "6", "8" ],
 											"parameter_type" : 2,
 											"parameter_unitstyle" : 0,
 											"parameter_longname" : "SyncRate[1]",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 15,
+											"parameter_initial" : [ 5.0 ],
+											"parameter_speedlim" : 0.0,
+											"parameter_shortname" : "Rate"
 										}
 
 									}
@@ -524,13 +545,13 @@
 									"presentation_rect" : [ 62.931854248046875, 79.405006408691406, 50.725528717041016, 15.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 5,
-											"parameter_initial" : [ 1 ],
-											"parameter_shortname" : "Shape",
 											"parameter_enum" : [ "sine", "up", "down", "triangle", "rect", "random" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "Shape[1]",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 5,
+											"parameter_initial" : [ 1 ],
+											"parameter_shortname" : "Shape"
 										}
 
 									}
@@ -570,16 +591,16 @@
 									"patching_rect" : [ 380.898131999999976, 472.000030999999979, 44.0, 19.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 1,
-											"parameter_initial" : [ 0.0 ],
-											"parameter_order" : 1,
-											"parameter_speedlim" : 0.0,
-											"parameter_shortname" : "Phase-Inversion",
 											"parameter_enum" : [ "Invert", "Invert" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "Phase-Inversion[1]",
 											"parameter_initial_enable" : 1,
-											"parameter_invisible" : 2
+											"parameter_invisible" : 2,
+											"parameter_mmax" : 1,
+											"parameter_initial" : [ 0.0 ],
+											"parameter_order" : 1,
+											"parameter_speedlim" : 0.0,
+											"parameter_shortname" : "Phase-Inversion"
 										}
 
 									}
@@ -612,15 +633,15 @@
 									"prototypename" : "amount",
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 1.0,
-											"parameter_initial" : [ 0.0 ],
-											"parameter_speedlim" : 0.0,
-											"parameter_shortname" : "Phase",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 1,
 											"parameter_mmin" : -1.0,
 											"parameter_longname" : "Phase[1]",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 1.0,
+											"parameter_initial" : [ 0.0 ],
+											"parameter_speedlim" : 0.0,
+											"parameter_shortname" : "Phase"
 										}
 
 									}
@@ -1210,15 +1231,15 @@
 									"presentation_rect" : [ 119.899223327636719, 79.405006408691406, 43.437690734863281, 15.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_enum" : [ "Sync", "Freq" ],
+											"parameter_type" : 2,
+											"parameter_longname" : "Time Mode[1]",
+											"parameter_initial_enable" : 1,
 											"parameter_mmax" : 1,
 											"parameter_initial" : [ 1 ],
 											"parameter_order" : 1,
 											"parameter_speedlim" : 0.0,
-											"parameter_shortname" : "Time Mode",
-											"parameter_enum" : [ "Sync", "Freq" ],
-											"parameter_type" : 2,
-											"parameter_longname" : "Time Mode[1]",
-											"parameter_initial_enable" : 1
+											"parameter_shortname" : "Time Mode"
 										}
 
 									}
@@ -1252,15 +1273,15 @@
 									"prototypename" : "freq",
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 40.0,
-											"parameter_initial" : [ 0.6 ],
-											"parameter_speedlim" : 0.0,
-											"parameter_shortname" : "Rate",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 3,
 											"parameter_exponent" : 4.0,
 											"parameter_longname" : "FreqRate[1]",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 40.0,
+											"parameter_initial" : [ 0.6 ],
+											"parameter_speedlim" : 0.0,
+											"parameter_shortname" : "Rate"
 										}
 
 									}
@@ -3174,7 +3195,6 @@
 													"fontname" : "Ableton Sans Bold Regular",
 													"fontsize" : 10.0,
 													"id" : "obj-32",
-													"linecount" : 2,
 													"maxclass" : "newobj",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -3202,7 +3222,6 @@
 													"fontname" : "Ableton Sans Bold Regular",
 													"fontsize" : 10.0,
 													"id" : "obj-18",
-													"linecount" : 2,
 													"maxclass" : "newobj",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -4447,18 +4466,18 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 3.0, 111.000015000000005, 59.5, 22.0 ],
 									"restore" : 									{
-										"FreqRate" : [ 0.320611793805892 ],
+										"FreqRate" : [ 0.010076855667383 ],
 										"Mute" : [ 0.0 ],
 										"Phase-Inversion" : [ 0.0 ],
 										"SpectraLFOPhase[1]" : [ -0.488188976377953 ],
-										"SpectraShape" : [ 1.0 ],
-										"SyncRate" : [ 6.0 ],
+										"SpectraShape" : [ 0.0 ],
+										"SyncRate" : [ 9.0 ],
 										"TimeMode" : [ 1.0 ],
 										"re-trigger" : [ 0.0 ]
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u475001535"
+									"varname" : "u784000977"
 								}
 
 							}
@@ -4493,14 +4512,14 @@
 									"presentation_rect" : [ 112.518768310546875, 19.0, 52.0, 14.764644622802734 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 1,
-											"parameter_initial" : [ 0.0 ],
-											"parameter_shortname" : "Mute",
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_defer" : 1,
 											"parameter_type" : 2,
 											"parameter_longname" : "Mute[1]",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 1,
+											"parameter_initial" : [ 0.0 ],
+											"parameter_shortname" : "Mute"
 										}
 
 									}
@@ -4877,30 +4896,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-34",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 734.0, 616.0, 88.0, 22.0 ],
-					"text" : "buffer~ stutbuff"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-41",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 782.75, 193.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-106",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -5064,7 +5059,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 3.0, 67.0, 221.0, 34.0 ],
+									"patching_rect" : [ 3.0, 67.0, 221.0, 33.0 ],
 									"text" : "## More advanced LFO with phase control, sync and status display ## "
 								}
 
@@ -5302,11 +5297,11 @@
 									"patching_rect" : [ 419.398131999999976, 304.545044000000019, 26.0, 26.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 1,
-											"parameter_shortname" : "Re-Trigger",
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_type" : 2,
-											"parameter_longname" : "Re-Trigger"
+											"parameter_longname" : "Re-Trigger",
+											"parameter_mmax" : 1,
+											"parameter_shortname" : "Re-Trigger"
 										}
 
 									}
@@ -5338,15 +5333,15 @@
 									"prototypename" : "M4L.dial.tiny",
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 15,
-											"parameter_initial" : [ 5.0 ],
-											"parameter_speedlim" : 0.0,
-											"parameter_shortname" : "Rate",
 											"parameter_enum" : [ "1/48", "1/32", "1/24", "1/16", "1/12", "1/8", "1/6", "1/4", "1/3", "1/2", "1", "2", "3", "4", "6", "8" ],
 											"parameter_type" : 2,
 											"parameter_unitstyle" : 0,
 											"parameter_longname" : "SyncRate",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 15,
+											"parameter_initial" : [ 5.0 ],
+											"parameter_speedlim" : 0.0,
+											"parameter_shortname" : "Rate"
 										}
 
 									}
@@ -5374,13 +5369,13 @@
 									"presentation_rect" : [ 62.931854248046875, 79.405006408691406, 50.725528717041016, 15.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 5,
-											"parameter_initial" : [ 1 ],
-											"parameter_shortname" : "Shape",
 											"parameter_enum" : [ "sine", "up", "down", "triangle", "rect", "random" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "Shape",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 5,
+											"parameter_initial" : [ 1 ],
+											"parameter_shortname" : "Shape"
 										}
 
 									}
@@ -5420,16 +5415,16 @@
 									"patching_rect" : [ 380.898131999999976, 472.000030999999979, 44.0, 19.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 1,
-											"parameter_initial" : [ 0.0 ],
-											"parameter_order" : 1,
-											"parameter_speedlim" : 0.0,
-											"parameter_shortname" : "Phase-Inversion",
 											"parameter_enum" : [ "Invert", "Invert" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "Phase-Inversion",
 											"parameter_initial_enable" : 1,
-											"parameter_invisible" : 2
+											"parameter_invisible" : 2,
+											"parameter_mmax" : 1,
+											"parameter_initial" : [ 0.0 ],
+											"parameter_order" : 1,
+											"parameter_speedlim" : 0.0,
+											"parameter_shortname" : "Phase-Inversion"
 										}
 
 									}
@@ -5462,15 +5457,15 @@
 									"prototypename" : "amount",
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 1.0,
-											"parameter_initial" : [ 0.0 ],
-											"parameter_speedlim" : 0.0,
-											"parameter_shortname" : "Phase",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 1,
 											"parameter_mmin" : -1.0,
 											"parameter_longname" : "Phase",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 1.0,
+											"parameter_initial" : [ 0.0 ],
+											"parameter_speedlim" : 0.0,
+											"parameter_shortname" : "Phase"
 										}
 
 									}
@@ -6060,15 +6055,15 @@
 									"presentation_rect" : [ 119.899223327636719, 79.405006408691406, 43.437690734863281, 15.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_enum" : [ "Sync", "Freq" ],
+											"parameter_type" : 2,
+											"parameter_longname" : "Time Mode",
+											"parameter_initial_enable" : 1,
 											"parameter_mmax" : 1,
 											"parameter_initial" : [ 1 ],
 											"parameter_order" : 1,
 											"parameter_speedlim" : 0.0,
-											"parameter_shortname" : "Time Mode",
-											"parameter_enum" : [ "Sync", "Freq" ],
-											"parameter_type" : 2,
-											"parameter_longname" : "Time Mode",
-											"parameter_initial_enable" : 1
+											"parameter_shortname" : "Time Mode"
 										}
 
 									}
@@ -6102,15 +6097,15 @@
 									"prototypename" : "freq",
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 40.0,
-											"parameter_initial" : [ 0.6 ],
-											"parameter_speedlim" : 0.0,
-											"parameter_shortname" : "Rate",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 3,
 											"parameter_exponent" : 4.0,
 											"parameter_longname" : "FreqRate",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 40.0,
+											"parameter_initial" : [ 0.6 ],
+											"parameter_speedlim" : 0.0,
+											"parameter_shortname" : "Rate"
 										}
 
 									}
@@ -8024,7 +8019,6 @@
 													"fontname" : "Ableton Sans Bold Regular",
 													"fontsize" : 10.0,
 													"id" : "obj-32",
-													"linecount" : 2,
 													"maxclass" : "newobj",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -8052,7 +8046,6 @@
 													"fontname" : "Ableton Sans Bold Regular",
 													"fontsize" : 10.0,
 													"id" : "obj-18",
-													"linecount" : 2,
 													"maxclass" : "newobj",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -9297,18 +9290,18 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 3.0, 111.000015000000005, 59.5, 22.0 ],
 									"restore" : 									{
-										"FreqRate" : [ 0.320611793805892 ],
+										"FreqRate" : [ 0.258258789194123 ],
 										"Mute" : [ 0.0 ],
 										"Phase-Inversion" : [ 0.0 ],
 										"SpectraLFOPhase[1]" : [ -0.488188976377953 ],
-										"SpectraShape" : [ 5.0 ],
-										"SyncRate" : [ 5.0 ],
+										"SpectraShape" : [ 0.0 ],
+										"SyncRate" : [ 6.0 ],
 										"TimeMode" : [ 1.0 ],
 										"re-trigger" : [ 0.0 ]
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u303001534"
+									"varname" : "u392000976"
 								}
 
 							}
@@ -9343,14 +9336,14 @@
 									"presentation_rect" : [ 112.518768310546875, 19.0, 52.0, 14.764644622802734 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 1,
-											"parameter_initial" : [ 0.0 ],
-											"parameter_shortname" : "Mute",
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_defer" : 1,
 											"parameter_type" : 2,
 											"parameter_longname" : "Mute",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 1,
+											"parameter_initial" : [ 0.0 ],
+											"parameter_shortname" : "Mute"
 										}
 
 									}
@@ -9767,7 +9760,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 115.0, 84.0, 646.0, 343.0 ],
+						"rect" : [ 38.0, 82.0, 287.0, 343.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -9903,8 +9896,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 82.666747999999998, 226.0, 134.0, 89.0 ],
-									"text" : "append C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples"
+									"patching_rect" : [ 82.666747999999998, 226.0, 134.0, 87.0 ],
+									"text" : "append \"Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/Samples\""
 								}
 
 							}
@@ -10046,12 +10039,12 @@
 					"patching_rect" : [ 18.0, 358.379518072289102, 48.0, 102.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "live.gain~[1]",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[1]"
+							"parameter_longname" : "live.gain~[1]",
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "live.gain~[1]"
 						}
 
 					}
@@ -10065,527 +10058,170 @@
 					"clipheight" : 20.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/amen brake 140.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/amen brake 140.wav",
 								"filename" : "amen brake 140.wav",
 								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"originallength" : [ 0.0, "ticks" ],
+									"slurtime" : [ 0.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"timestretch" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"formantcorrection" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/okay-i-quit-no-sfx.wav",
+								"filename" : "okay-i-quit-no-sfx.wav",
+								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
+									"slurtime" : [ 0.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"timestretch" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/okay-i-quit-no-sfx.wav",
-								"filename" : "okay-i-quit-no-sfx.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Child Choir 01 120 BPM C.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Child Choir 01 120 BPM C.wav",
 								"filename" : "RMR Child Choir 01 120 BPM C.wav",
 								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
+									"slurtime" : [ 0.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"timestretch" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Fine Day.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Fine Day.wav",
 								"filename" : "RMR Fine Day.wav",
 								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
+									"slurtime" : [ 0.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"timestretch" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Kinetic Metal 01 80 BPM.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Kinetic Metal 01 80 BPM.wav",
 								"filename" : "RMR Kinetic Metal 01 80 BPM.wav",
 								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
+									"slurtime" : [ 0.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"timestretch" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Mallet Flux 01 80 BPM.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Mallet Flux 01 80 BPM.wav",
 								"filename" : "RMR Mallet Flux 01 80 BPM.wav",
 								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
+									"slurtime" : [ 0.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"timestretch" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Percussion 80 BPM.wav",
+								"absolutepath" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/samples/RMR Percussion 80 BPM.wav",
 								"filename" : "RMR Percussion 80 BPM.wav",
 								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/amen brake 140.wav",
-								"filename" : "amen brake 140.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
 									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/okay-i-quit-no-sfx.wav",
-								"filename" : "okay-i-quit-no-sfx.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
 									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
 									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Child Choir 01 120 BPM C.wav",
-								"filename" : "RMR Child Choir 01 120 BPM C.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
+									"originaltempo" : [ 120.0 ],
+									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
 									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
 									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Fine Day.wav",
-								"filename" : "RMR Fine Day.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
 									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
 									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Kinetic Metal 01 80 BPM.wav",
-								"filename" : "RMR Kinetic Metal 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
+									"timestretch" : [ 0 ],
 									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Mallet Flux 01 80 BPM.wav",
-								"filename" : "RMR Mallet Flux 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Percussion 80 BPM.wav",
-								"filename" : "RMR Percussion 80 BPM.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/amen brake 140.wav",
-								"filename" : "amen brake 140.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/okay-i-quit-no-sfx.wav",
-								"filename" : "okay-i-quit-no-sfx.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Child Choir 01 120 BPM C.wav",
-								"filename" : "RMR Child Choir 01 120 BPM C.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Fine Day.wav",
-								"filename" : "RMR Fine Day.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Kinetic Metal 01 80 BPM.wav",
-								"filename" : "RMR Kinetic Metal 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Mallet Flux 01 80 BPM.wav",
-								"filename" : "RMR Mallet Flux 01 80 BPM.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
-, 							{
-								"absolutepath" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/Samples/RMR Percussion 80 BPM.wav",
-								"filename" : "RMR Percussion 80 BPM.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
@@ -10934,7 +10570,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 16.715827338129543, 325.0, 48.0 ],
+					"patching_rect" : [ 14.0, 16.715827338129543, 325.0, 47.0 ],
 					"text" : "Template for Noise Engineering Versio with clock and monitoring"
 				}
 
@@ -10961,12 +10597,12 @@
 					"patching_rect" : [ 18.0, 532.0, 44.0, 90.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~"
+							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "live.gain~"
 						}
 
 					}
@@ -11035,7 +10671,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 833.0, 84.0, 662.0, 745.0 ],
+						"rect" : [ 756.0, 82.0, 646.0, 780.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -11064,13 +10700,24 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-93",
+									"id" : "obj-113",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 849.0, 1009.859779506921768, 29.5, 22.0 ],
-									"text" : "*"
+									"patching_rect" : [ 816.973054647445679, 1018.0, 40.0, 22.0 ],
+									"text" : "Mix"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-86",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1062.0, 1018.0, 53.0, 22.0 ],
+									"text" : "send NL"
 								}
 
 							}
@@ -11079,10 +10726,92 @@
 									"id" : "obj-85",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 898.0, 818.0, 55.0, 22.0 ],
+									"text" : "send NR"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-51",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1031.0, 769.0, 57.0, 22.0 ],
+									"text" : "send NM"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-111",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 644.0, 892.0, 107.0, 22.0 ],
-									"text" : "clip 96000 384000"
+									"patching_rect" : [ 800.473054647445679, 511.0, 56.0, 22.0 ],
+									"text" : "r BLEND"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-105",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 800.473054647445679, 557.497657239437103, 42.0, 22.0 ],
+									"text" : "< 0.99"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-95",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 882.0, 691.0, 40.0, 22.0 ],
+									"text" : "?"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-94",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 807.0, 635.0, 40.0, 22.0 ],
+									"text" : "?"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-63",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 724.0, 691.0, 57.0, 22.0 ],
+									"text" : "dim main"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-93",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 862.083347856998444, 987.859779506921768, 29.5, 22.0 ],
+									"text" : "*"
 								}
 
 							}
@@ -11186,11 +10915,11 @@
 								"box" : 								{
 									"id" : "obj-145",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 644.0, 774.0, 110.0, 22.0 ],
-									"text" : "scale 0 1 1 384000"
+									"patching_rect" : [ 714.0, 722.0, 93.0, 22.0 ],
+									"text" : "scale 0 1 96000"
 								}
 
 							}
@@ -11201,7 +10930,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 638.0, 731.0, 59.0, 22.0 ],
+									"patching_rect" : [ 714.0, 659.0, 59.0, 22.0 ],
 									"text" : "r REGEN"
 								}
 
@@ -11213,8 +10942,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 849.0, 927.571429669857025, 263.0, 22.0 ],
-									"text" : "sample stutter @boundmode clip @index spline"
+									"patching_rect" : [ 862.083347856998444, 931.571429669857025, 265.0, 22.0 ],
+									"text" : "sample main @boundmode wrap @interp spline"
 								}
 
 							}
@@ -11225,7 +10954,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 874.333333333333371, 652.148142337799072, 19.0, 22.0 ],
+									"patching_rect" : [ 894.333333333333371, 613.886211335659027, 19.0, 22.0 ],
 									"text" : "1"
 								}
 
@@ -11237,7 +10966,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 874.333333333333371, 683.0, 49.0, 22.0 ],
+									"patching_rect" : [ 894.333333333333371, 644.738068997859955, 49.0, 22.0 ],
 									"text" : "counter"
 								}
 
@@ -11249,8 +10978,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 874.333333333333371, 620.0, 151.0, 22.0 ],
-									"text" : "data stutter 384000 2"
+									"patching_rect" : [ 894.333333333333371, 581.738068997859955, 115.0, 22.0 ],
+									"text" : "data main 768000 2"
 								}
 
 							}
@@ -11260,19 +10989,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 4,
 									"numoutlets" : 0,
-									"patching_rect" : [ 843.0, 722.0, 171.0, 22.0 ],
-									"text" : "poke stutter @boundmode clip"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-112",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1158.042872154712768, 768.09956294298172, 60.0, 22.0 ],
-									"text" : "s SCOPE"
+									"patching_rect" : [ 843.0, 722.0, 172.0, 22.0 ],
+									"text" : "poke main @boundmode wrap"
 								}
 
 							}
@@ -11402,17 +11120,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1120.833347856998444, 731.0, 29.5, 22.0 ],
 									"text" : "rate"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-51",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1121.392872154712677, 768.09956294298172, 36.0, 22.0 ],
-									"text" : "s NM"
 								}
 
 							}
@@ -11610,43 +11317,8 @@
 										"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 									}
 ,
-									"patching_rect" : [ 882.0, 969.357211142778397, 74.0, 22.0 ],
+									"patching_rect" : [ 882.0, 957.404835194349289, 74.0, 22.0 ],
 									"text" : "gen window"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-121",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 679.5, 519.148142337799072, 49.0, 22.0 ],
-									"text" : "counter"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-116",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 806.473054647445679, 567.0, 172.0, 22.0 ],
-									"text" : "peek main @boundmode wrap"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-105",
-									"maxclass" : "newobj",
-									"numinlets" : 4,
-									"numoutlets" : 0,
-									"patching_rect" : [ 628.5, 567.0, 172.0, 22.0 ],
-									"text" : "poke main @boundmode wrap"
 								}
 
 							}
@@ -11657,7 +11329,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 843.0, 1042.648129343986511, 56.0, 22.0 ],
+									"patching_rect" : [ 843.0, 1056.648129343986511, 56.0, 22.0 ],
 									"text" : "r BLEND"
 								}
 
@@ -11671,18 +11343,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 806.473054647445679, 1092.148129343986511, 40.0, 22.0 ],
 									"text" : "mix"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-63",
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 709.5, 473.784505844116211, 115.0, 22.0 ],
-									"text" : "data main 384000 2"
 								}
 
 							}
@@ -12676,7 +12336,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 7.111110925674438, 248.0, 118.0, 62.0 ],
+									"patching_rect" : [ 7.111110925674438, 248.0, 118.0, 60.0 ],
 									"text" : "Monitoring\nout 7 - scope\nout 8,9,10 - number\n"
 								}
 
@@ -12766,7 +12426,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 40.611110925674438, 577.296287178993225, 100.0, 89.0 ],
+									"patching_rect" : [ 40.611110925674438, 577.296287178993225, 100.0, 87.0 ],
 									"text" : "The \"FSU\" momentary button functions similar to the gate input, but is independent"
 								}
 
@@ -12802,7 +12462,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 39.111110925674438, 305.074069499969482, 110.0, 89.0 ],
+									"patching_rect" : [ 39.111110925674438, 305.074069499969482, 110.0, 87.0 ],
 									"text" : "Gate inputs are similar to CVs, but the input is always either @min or @max, also 0 or 1 by default."
 								}
 
@@ -12826,7 +12486,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 189.611112594604492, 31.0, 132.0, 89.0 ],
+									"patching_rect" : [ 189.611112594604492, 31.0, 132.0, 87.0 ],
 									"text" : "Knob/CV/Gate etc.\nEach hardware knob + cv will handle 0-5v, which is mapped to @min-@max in gen~ (default 0-1)"
 								}
 
@@ -12895,7 +12555,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 40.468018174171448, 1037.148129343986511, 335.0, 34.0 ],
+									"patching_rect" : [ 40.468018174171448, 1037.148129343986511, 335.0, 33.0 ],
 									"text" : "Leds accept ranges of -1 to 1. -1 is red, 1 is green, and 0 is off; so they can operate well to visualize LFOs for example. "
 								}
 
@@ -12907,7 +12567,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 65.925926327705383, 668.296287178993225, 179.0, 75.0 ],
+									"patching_rect" : [ 65.925926327705383, 668.296287178993225, 179.0, 74.0 ],
 									"text" : "switches ABC/XYZ: \ncenter = @min or 0, \nleft = avg @min,@max or 0.5\nright = @max or 1\nREMAPPED TO 1 2 3"
 								}
 
@@ -12927,7 +12587,16 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-105", 0 ],
+									"destination" : [ "obj-78", 0 ],
+									"order" : 1,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-94", 1 ],
+									"order" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -12962,8 +12631,17 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-121", 0 ],
-									"source" : [ "obj-104", 0 ]
+									"destination" : [ "obj-94", 0 ],
+									"order" : 1,
+									"source" : [ "obj-105", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-95", 0 ],
+									"order" : 0,
+									"source" : [ "obj-105", 0 ]
 								}
 
 							}
@@ -12997,6 +12675,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-105", 0 ],
+									"source" : [ "obj-111", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-78", 1 ],
+									"source" : [ "obj-113", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-108", 0 ],
 									"source" : [ "obj-114", 0 ]
 								}
@@ -13004,24 +12696,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-136", 0 ],
-									"order" : 0,
-									"source" : [ "obj-116", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-78", 0 ],
-									"order" : 1,
-									"source" : [ "obj-116", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-140", 0 ],
-									"order" : 1,
+									"order" : 2,
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -13029,24 +12705,16 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-194", 0 ],
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-12", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-105", 1 ],
-									"order" : 1,
-									"source" : [ "obj-121", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-116", 0 ],
+									"destination" : [ "obj-85", 0 ],
 									"order" : 0,
-									"source" : [ "obj-121", 0 ]
+									"source" : [ "obj-12", 0 ]
 								}
 
 							}
@@ -13066,16 +12734,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-136", 1 ],
-									"order" : 1,
+									"destination" : [ "obj-88", 0 ],
+									"order" : 0,
 									"source" : [ "obj-139", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-88", 0 ],
-									"order" : 0,
+									"destination" : [ "obj-95", 1 ],
+									"order" : 1,
 									"source" : [ "obj-139", 0 ]
 								}
 
@@ -13097,15 +12765,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-139", 2 ],
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-145", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-85", 0 ],
-									"order" : 1,
+									"destination" : [ "obj-82", 1 ],
+									"order" : 0,
 									"source" : [ "obj-145", 0 ]
 								}
 
@@ -13239,6 +12907,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-151", 1 ],
+									"order" : 0,
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-86", 0 ],
+									"order" : 1,
 									"source" : [ "obj-38", 0 ]
 								}
 
@@ -13346,16 +13023,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-112", 0 ],
-									"order" : 0,
-									"source" : [ "obj-53", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
-									"order" : 2,
+									"order" : 1,
 									"source" : [ "obj-53", 0 ]
 								}
 
@@ -13363,7 +13032,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-51", 0 ],
-									"order" : 1,
+									"order" : 0,
 									"source" : [ "obj-53", 0 ]
 								}
 
@@ -13419,7 +13088,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-121", 2 ],
+									"destination" : [ "obj-145", 1 ],
 									"source" : [ "obj-63", 0 ]
 								}
 
@@ -13514,13 +13183,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-82", 1 ],
-									"source" : [ "obj-85", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-53", 0 ],
 									"source" : [ "obj-88", 0 ]
 								}
@@ -13573,8 +13235,22 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-78", 1 ],
+									"destination" : [ "obj-113", 1 ],
 									"source" : [ "obj-93", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-136", 0 ],
+									"source" : [ "obj-94", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-136", 1 ],
+									"source" : [ "obj-95", 0 ]
 								}
 
 							}
@@ -13609,9 +13285,9 @@
  ]
 					}
 ,
-					"patching_rect" : [ 18.0, 483.0, 231.0, 36.0 ],
+					"patching_rect" : [ 18.0, 483.0, 231.0, 35.0 ],
 					"saved_object_attributes" : 					{
-						"exportfolder" : "C:/Users/user/CODING/MaxMSP/VersioOopsyTemplate/",
+						"exportfolder" : "Macintosh HD:/Users/onoma/Coding/MaxMSP/VersioGenTemplate/",
 						"exportname" : "GiveTitle"
 					}
 ,
@@ -13635,12 +13311,12 @@
 					"patching_rect" : [ 539.833333333333258, 109.5, 16.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "live.button",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 1,
-							"parameter_longname" : "live.button[5]"
+							"parameter_longname" : "live.button[5]",
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "live.button"
 						}
 
 					}
@@ -13663,12 +13339,12 @@
 					"patching_rect" : [ 520.5, 109.5, 16.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "live.button",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 1,
-							"parameter_longname" : "live.button[6]"
+							"parameter_longname" : "live.button[6]",
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "live.button"
 						}
 
 					}
@@ -13692,12 +13368,12 @@
 					"patching_rect" : [ 494.333333333333314, 109.5, 16.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "live.button",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 1,
-							"parameter_longname" : "live.button[3]"
+							"parameter_longname" : "live.button[3]",
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "live.button"
 						}
 
 					}
@@ -13720,12 +13396,12 @@
 					"patching_rect" : [ 475.0, 109.5, 16.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "live.button",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 1,
-							"parameter_longname" : "live.button"
+							"parameter_longname" : "live.button",
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "live.button"
 						}
 
 					}
@@ -14198,14 +13874,14 @@
 					"patching_rect" : [ 435.5, 251.5, 29.0, 17.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 2,
-							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "live.tab[3]",
 							"parameter_enum" : [ "A", "B", "C" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 9,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "live.tab[4]"
+							"parameter_longname" : "live.tab[4]",
+							"parameter_mmax" : 2,
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "live.tab[3]"
 						}
 
 					}
@@ -14241,11 +13917,11 @@
 					"rounded" : 22.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text"
+							"parameter_longname" : "live.text",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text"
 						}
 
 					}
@@ -14269,14 +13945,14 @@
 					"patching_rect" : [ 435.5, 288.0, 29.0, 17.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 2,
-							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "live.tab[3]",
 							"parameter_enum" : [ "X", "Y", "Z" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 9,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "live.tab[2]"
+							"parameter_longname" : "live.tab[2]",
+							"parameter_mmax" : 2,
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "live.tab[3]"
 						}
 
 					}
@@ -14299,12 +13975,12 @@
 					"patching_rect" : [ 556.0, 250.0, 50.0, 43.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "knob7",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "knob7",
-							"parameter_modmode" : 1
+							"parameter_modmode" : 1,
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "knob7"
 						}
 
 					}
@@ -14328,12 +14004,12 @@
 					"patching_rect" : [ 556.0, 172.0, 50.0, 43.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "knob6",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "knob6",
-							"parameter_modmode" : 1
+							"parameter_modmode" : 1,
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "knob6"
 						}
 
 					}
@@ -14357,12 +14033,12 @@
 					"patching_rect" : [ 556.0, 94.0, 50.0, 43.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "knob5",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "knob5",
-							"parameter_modmode" : 1
+							"parameter_modmode" : 1,
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "knob5"
 						}
 
 					}
@@ -14386,12 +14062,12 @@
 					"patching_rect" : [ 488.0, 208.0, 50.0, 43.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "knob4",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "knob4",
-							"parameter_modmode" : 1
+							"parameter_modmode" : 1,
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "knob4"
 						}
 
 					}
@@ -14415,12 +14091,12 @@
 					"patching_rect" : [ 488.0, 132.0, 50.0, 43.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "knob3",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "knob3",
-							"parameter_modmode" : 1
+							"parameter_modmode" : 1,
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "knob3"
 						}
 
 					}
@@ -14444,12 +14120,12 @@
 					"patching_rect" : [ 423.0, 172.0, 50.0, 43.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "knob2",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "knob2",
-							"parameter_modmode" : 1
+							"parameter_modmode" : 1,
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "knob2"
 						}
 
 					}
@@ -14473,12 +14149,12 @@
 					"patching_rect" : [ 423.0, 94.0, 50.0, 43.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "knob1",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "knob1",
-							"parameter_modmode" : 1
+							"parameter_modmode" : 1,
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "knob1"
 						}
 
 					}
@@ -15629,13 +15305,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
@@ -15652,13 +15321,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-101", 0 ],
-					"source" : [ "obj-41", 0 ]
 				}
 
 			}
@@ -15827,6 +15489,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-106", 0 ],
 					"order" : 2,
 					"source" : [ "obj-69", 0 ]
@@ -15941,43 +15610,47 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-20" : [ "knob7", "knob7", 0 ],
-			"obj-73" : [ "live.button", "live.button", 0 ],
-			"obj-18" : [ "knob6", "knob6", 0 ],
-			"obj-19" : [ "knob5", "knob5", 0 ],
-			"obj-74::obj-12" : [ "Mute", "Mute", 0 ],
-			"obj-16" : [ "knob4", "knob4", 0 ],
-			"obj-52::obj-94" : [ "Re-Trigger[1]", "Re-Trigger", 0 ],
-			"obj-17" : [ "knob3", "knob3", 0 ],
-			"obj-52::obj-74" : [ "SyncRate[1]", "Rate", 0 ],
-			"obj-12" : [ "knob2", "knob2", 0 ],
-			"obj-52::obj-75" : [ "Shape[1]", "Shape", 0 ],
-			"obj-10" : [ "knob1", "knob1", 0 ],
-			"obj-52::obj-81" : [ "Phase-Inversion[1]", "Phase-Inversion", 1 ],
-			"obj-52::obj-144" : [ "Phase[1]", "Phase", 0 ],
-			"obj-22" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
-			"obj-9::obj-32" : [ "live.text[2]", "FILTER", 0 ],
-			"obj-52::obj-88" : [ "Time Mode[1]", "Time Mode", 1 ],
-			"obj-83" : [ "live.button[3]", "live.button", 0 ],
-			"obj-74::obj-144" : [ "Phase", "Phase", 0 ],
 			"obj-52::obj-89" : [ "FreqRate[1]", "Rate", 0 ],
-			"obj-74::obj-88" : [ "Time Mode", "Time Mode", 1 ],
-			"obj-9::obj-34" : [ "live.text[3]", "FILTER", 0 ],
-			"obj-74::obj-81" : [ "Phase-Inversion", "Phase-Inversion", 1 ],
-			"obj-85" : [ "live.button[5]", "live.button", 0 ],
-			"obj-26" : [ "live.tab[2]", "live.tab[3]", 0 ],
-			"obj-29" : [ "live.tab[4]", "live.tab[3]", 0 ],
-			"obj-86" : [ "live.button[6]", "live.button", 0 ],
+			"obj-52::obj-74" : [ "SyncRate[1]", "Rate", 0 ],
 			"obj-11" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-85" : [ "live.button[5]", "live.button", 0 ],
+			"obj-35::obj-1" : [ "Sync", "Sync", 0 ],
+			"obj-29" : [ "live.tab[4]", "live.tab[3]", 0 ],
+			"obj-74::obj-12" : [ "Mute", "Mute", 0 ],
+			"obj-86" : [ "live.button[6]", "live.button", 0 ],
+			"obj-52::obj-75" : [ "Shape[1]", "Shape", 0 ],
+			"obj-74::obj-88" : [ "Time Mode", "Time Mode", 1 ],
+			"obj-52::obj-94" : [ "Re-Trigger[1]", "Re-Trigger", 0 ],
+			"obj-20" : [ "knob7", "knob7", 0 ],
+			"obj-18" : [ "knob6", "knob6", 0 ],
+			"obj-35::obj-30" : [ "sync_source", "sync_source", 0 ],
+			"obj-19" : [ "knob5", "knob5", 0 ],
+			"obj-16" : [ "knob4", "knob4", 0 ],
+			"obj-9::obj-32" : [ "live.text[2]", "FILTER", 0 ],
+			"obj-17" : [ "knob3", "knob3", 0 ],
+			"obj-26" : [ "live.tab[2]", "live.tab[3]", 0 ],
+			"obj-12" : [ "knob2", "knob2", 0 ],
+			"obj-9::obj-34" : [ "live.text[3]", "FILTER", 0 ],
+			"obj-52::obj-144" : [ "Phase[1]", "Phase", 0 ],
+			"obj-10" : [ "knob1", "knob1", 0 ],
 			"obj-52::obj-12" : [ "Mute[1]", "Mute", 0 ],
-			"obj-74::obj-89" : [ "FreqRate", "Rate", 0 ],
-			"obj-74::obj-74" : [ "SyncRate", "Rate", 0 ],
-			"obj-74::obj-75" : [ "Shape", "Shape", 0 ],
-			"obj-30" : [ "live.text", "live.text", 0 ],
+			"obj-35::obj-129" : [ "Tempo", "Tempo", 0 ],
+			"obj-74::obj-81" : [ "Phase-Inversion", "Phase-Inversion", 1 ],
+			"obj-52::obj-81" : [ "Phase-Inversion[1]", "Phase-Inversion", 1 ],
+			"obj-22" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
 			"obj-7::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
 			"obj-74::obj-94" : [ "Re-Trigger", "Re-Trigger", 0 ],
+			"obj-74::obj-89" : [ "FreqRate", "Rate", 0 ],
+			"obj-74::obj-74" : [ "SyncRate", "Rate", 0 ],
+			"obj-52::obj-88" : [ "Time Mode[1]", "Time Mode", 1 ],
+			"obj-73" : [ "live.button", "live.button", 0 ],
+			"obj-74::obj-144" : [ "Phase", "Phase", 0 ],
 			"obj-9::obj-33" : [ "live.text[1]", "FILTER", 0 ],
+			"obj-83" : [ "live.button[3]", "live.button", 0 ],
+			"obj-74::obj-75" : [ "Shape", "Shape", 0 ],
+			"obj-35::obj-76" : [ "Transport", "Transport", 0 ],
 			"obj-7::obj-35" : [ "[5]", "Level", 0 ],
+			"obj-30" : [ "live.text", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -16085,51 +15758,57 @@
 			}
 , 			{
 				"name" : "amen brake 140.wav",
-				"bootpath" : "~/CODING/MaxMSP/VersioOopsyTemplate/Samples",
-				"patcherrelativepath" : "./Samples",
+				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "okay-i-quit-no-sfx.wav",
-				"bootpath" : "~/CODING/MaxMSP/VersioOopsyTemplate/Samples",
-				"patcherrelativepath" : "./Samples",
+				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RMR Child Choir 01 120 BPM C.wav",
-				"bootpath" : "~/CODING/MaxMSP/VersioOopsyTemplate/Samples",
-				"patcherrelativepath" : "./Samples",
+				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RMR Fine Day.wav",
-				"bootpath" : "~/CODING/MaxMSP/VersioOopsyTemplate/Samples",
-				"patcherrelativepath" : "./Samples",
+				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RMR Kinetic Metal 01 80 BPM.wav",
-				"bootpath" : "~/CODING/MaxMSP/VersioOopsyTemplate/Samples",
-				"patcherrelativepath" : "./Samples",
+				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RMR Mallet Flux 01 80 BPM.wav",
-				"bootpath" : "~/CODING/MaxMSP/VersioOopsyTemplate/Samples",
-				"patcherrelativepath" : "./Samples",
+				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RMR Percussion 80 BPM.wav",
-				"bootpath" : "~/CODING/MaxMSP/VersioOopsyTemplate/Samples",
-				"patcherrelativepath" : "./Samples",
+				"bootpath" : "~/Coding/MaxMSP/VersioGenTemplate/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bp.Global Transport.maxpat",
+				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Sequencer",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
@@ -16141,8 +15820,8 @@
 		"styles" : [ 			{
 				"name" : "newobj001",
 				"default" : 				{
-					"fontname" : [ "Arial Bold" ],
-					"fontsize" : [ 10.0 ]
+					"fontsize" : [ 10.0 ],
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
